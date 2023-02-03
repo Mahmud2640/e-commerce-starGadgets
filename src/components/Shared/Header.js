@@ -109,24 +109,41 @@ const Header = () => {
                 <div>
                   <div className="dropdown">
                     <button
-                      className="btn btn-secondary dropdown-toggle"
+                      className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center me-5"
                       type="button"
                       id="dropdownMenuButtonl"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      Dropdown
+                      <img src="images/menu.svg" alt="menu" />
+                      <span className="me-2 d-inline-block">
+                        Shop Categories
+                      </span>
                     </button>
                     <ul
                       className="dropdown-menu"
                       aria-labelledby="dropdownButtonal"
                     >
-                      <li className="dropdown-item">Action</li>
+                      <li>
+                        <Link className="dropdown-item text-white" to="">
+                          Action
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item text-white" to="#">
+                          Another Action
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item text-white" to="">
+                          Something Action
+                        </Link>
+                      </li>
                     </ul>
                   </div>
                 </div>
                 <div className="menu-links">
-                  <div className="d-flex align-items-center gap-15">
+                  <div className="d-flex align-items-center gap-30">
                     <NavLink to="/home">Home</NavLink>
                     <NavLink to="/store">Our Store</NavLink>
                     <NavLink to="blogs">Blogs</NavLink>
