@@ -4,6 +4,7 @@ import Marquee from "react-fast-marquee";
 import "./Home.css";
 import BlogCard from "../../components/Blog/BlogCard";
 import ProductCard from "../../components/Products/ProductCard";
+import SpecialProduct from "../../components/SpecialProduct/SpecialProduct";
 
 const Home = () => {
   return (
@@ -202,7 +203,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="blog-wrapper py-5 home-wrapper-2">
+      <section className="featured-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
@@ -215,6 +216,20 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <div className="special-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Special Product</h3>
+            </div>
+          </div>
+          <div className="row">
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+          </div>
+        </div>
+      </div>
       <section className="marque-wrapper py-5">
         <div className="container-xxl">
           <div className="row">
