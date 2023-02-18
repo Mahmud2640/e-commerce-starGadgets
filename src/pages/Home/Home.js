@@ -5,10 +5,12 @@ import "./Home.css";
 import BlogCard from "../../components/Blog/BlogCard";
 import ProductCard from "../../components/Products/ProductCard";
 import SpecialProduct from "../../components/SpecialProduct/SpecialProduct";
+import Meta from "../../components/seo/Meta";
 
 const Home = () => {
   return (
     <>
+      <Meta title={"StarGadgetsBD"} />
       <section className="home-wrapper-1 py-5">
         <div className="container-xxl">
           <div className="row">
