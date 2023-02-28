@@ -17,11 +17,13 @@
   line-height: 54px;
   text-transform: none;
   letter-spacing: -2px;
+  color: white;
 }
 .main-banner-content p {
   font-size: 18px;
   line-height: 28px;
-  color: var(--color-131921);
+  /* color: var(--color-131921); */
+  color: white;
   letter-spacing: 0.4;
 }
 /* small banner */
