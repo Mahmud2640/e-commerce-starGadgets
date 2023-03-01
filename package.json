@@ -3,11 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
     "@reduxjs/toolkit": "^1.9.2",
-=======
-    "@reduxjs/toolkit": "^1.9.3",
->>>>>>> 1c54ec2775f27c62af004b9e983133c70ddcf9b2
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
