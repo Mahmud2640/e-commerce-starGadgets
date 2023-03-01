@@ -8,8 +8,10 @@ import OurStore from "../pages/Store/OurStore";
 import Blog from "../pages/Blog/Blog";
 import CompareProduct from "../pages/CompareProduct/CompareProduct";
 import WishList from "../pages/WishList/WishList";
-import Login from "../pages/Login/Login";
 import Cart from "../pages/Cart/Cart";
+import Login from "../pages/Auth/Login";
+import Signup from "../pages/Auth/Signup";
+import ForgetPassword from "../pages/Auth/ForgetPassword";
 
 const Routess = () => {
   return (
@@ -24,6 +26,9 @@ const Routess = () => {
           <Route path="compare-product" element={<CompareProduct />} />
           <Route path="wishlist" element={<WishList />} />
           <Route path="login" element={<Login />} />
+          <Route path="signup" element={<Signup />} />
+          <Route path="forget" element={<ForgetPassword />} />
+
           <Route path="cart" element={<Cart />} />
         </Route>
       </Routes>
