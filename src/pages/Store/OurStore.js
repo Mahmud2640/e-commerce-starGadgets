@@ -4,6 +4,7 @@ import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
 import Meta from "../../components/seo/Meta";
 import ProductCard from "../../components/Products/ProductCard";
 import "./OurStore.css";
+import Color from "../../components/Color/Color";
 
 const OurStore = () => {
   const [grid, setGrid] = useState(4);
@@ -77,15 +78,7 @@ const OurStore = () => {
                   </div>
                   <h5 className="sub-title">Colors</h5>
                   <div>
-                    <ul className="colors ps-0">
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
+                    <Color />
                   </div>
                   <h5 className="sub-title">Size</h5>
                   <div>
