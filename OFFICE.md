@@ -1,13 +1,1 @@
-hello this is a test from office
-tjoihjokhjjgfhjihjrthjtohkt lorem ipsum
-jihvjfvefjvjveiv
-oejvhevjbvjbvjvf
-wjfekcnvbjvbjvdf
-vnkvnvbvbvibvie
-kvvbvjbvbviv
-jnbvjbvbvjebv
-vnvbvbvbvv
-vneivivbevbeivbeivbe
-ribjhvbjvbivbev
-kjvejv evbfvbvker
-text
+done to restore the original state of the file.  If the file is not in the index, the command will fail. If the file is in the index, the command will succeed, but the file will not be restored to its original state.
