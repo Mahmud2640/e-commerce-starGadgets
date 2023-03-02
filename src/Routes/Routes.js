@@ -18,6 +18,7 @@ import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy";
 import RefundPolicy from "../pages/RefundPolicy/RefundPolicy";
 import ShipingPolicy from "../pages/ShipingPolicy/ShipingPolicy";
 import TermsAndCondition from "../pages/TermsAndCondition/TermsAndCondition";
+import SingleProduct from "../pages/Store/SingleProduct";
 
 const Routess = () => {
   return (
@@ -41,6 +42,7 @@ const Routess = () => {
           <Route path="refund-policy" element={<RefundPolicy />} />
           <Route path="shiping-policy" element={<ShipingPolicy />} />
           <Route path="terms-and-condition" element={<TermsAndCondition />} />
+          <Route path="product/:id" element={<SingleProduct />} />
         </Route>
       </Routes>
     </BrowserRouter>
