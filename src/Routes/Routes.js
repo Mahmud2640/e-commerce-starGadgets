@@ -12,6 +12,7 @@ import Cart from "../pages/Cart/Cart";
 import Login from "../pages/Auth/Login";
 import Signup from "../pages/Auth/Signup";
 import ForgetPassword from "../pages/Auth/ForgetPassword";
+import ResetPassword from "../pages/Auth/ResetPassword";
 
 const Routess = () => {
   return (
@@ -27,8 +28,8 @@ const Routess = () => {
           <Route path="wishlist" element={<WishList />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
-          <Route path="forget" element={<ForgetPassword />} />
-
+          <Route path="forget-password" element={<ForgetPassword />} />
+          <Route path="reset-password" element={<ResetPassword />} />
           <Route path="cart" element={<Cart />} />
         </Route>
       </Routes>
