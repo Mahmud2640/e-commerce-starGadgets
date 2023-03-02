@@ -13,6 +13,11 @@ import Login from "../pages/Auth/Login";
 import Signup from "../pages/Auth/Signup";
 import ForgetPassword from "../pages/Auth/ForgetPassword";
 import ResetPassword from "../pages/Auth/ResetPassword";
+import SingleBlog from "../pages/Blog/SingleBlog";
+import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy";
+import RefundPolicy from "../pages/RefundPolicy/RefundPolicy";
+import ShipingPolicy from "../pages/ShipingPolicy/ShipingPolicy";
+import TermsAndCondition from "../pages/TermsAndCondition/TermsAndCondition";
 
 const Routess = () => {
   return (
@@ -22,6 +27,7 @@ const Routess = () => {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="blog/:id" element={<SingleBlog />} />
           <Route path="contact" element={<Contact />} />
           <Route path="store" element={<OurStore />} />
           <Route path="compare-product" element={<CompareProduct />} />
@@ -31,6 +37,10 @@ const Routess = () => {
           <Route path="forget-password" element={<ForgetPassword />} />
           <Route path="reset-password" element={<ResetPassword />} />
           <Route path="cart" element={<Cart />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="refund-policy" element={<RefundPolicy />} />
+          <Route path="shiping-policy" element={<ShipingPolicy />} />
+          <Route path="terms-and-condition" element={<TermsAndCondition />} />
         </Route>
       </Routes>
     </BrowserRouter>
