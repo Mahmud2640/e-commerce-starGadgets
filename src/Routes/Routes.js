@@ -30,7 +30,7 @@ const Routess = () => {
           <Route path="blog" element={<Blog />} />
           <Route path="blog/:id" element={<SingleBlog />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="store" element={<OurStore />} />
+          <Route path="product" element={<OurStore />} />
           <Route path="compare-product" element={<CompareProduct />} />
           <Route path="wishlist" element={<WishList />} />
           <Route path="login" element={<Login />} />
