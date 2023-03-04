@@ -1,6 +1,7 @@
 import React from "react";
 import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
 import Meta from "../../components/seo/Meta";
+import "./WishList.css";
 
 const WishList = () => {
   return (
