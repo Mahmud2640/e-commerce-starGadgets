@@ -72,3 +72,19 @@
   border-radius: 10px;
   background-color: white;
 }
+.border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.main-product-details h3.title {
+  font-size: 18px;
+  color: var(--color-1c1c1b);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.main-product-details p.price {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

@@ -59,7 +59,45 @@ const SingleProduct = () => {
               </div>
             </div>
             <div className="col-6">
-              <div className="main-product-details"></div>
+              <div className="main-product-details">
+                <div className="border-bottom">
+                  <h3 className="title">
+                    Kids Headphones Bulk 10 Pack Multi Colored For Students
+                  </h3>
+                </div>
+                <div className="border-bottom py-3">
+                  <p className="price">$ 100</p>
+                  <div className="d-flex align-items-center gap-10">
+                    <ReactStars
+                      count={5}
+                      size={24}
+                      value={4}
+                      edit={false}
+                      activeColor="#ffd700"
+                    />
+                    <p className="mb-0">( 2 Reviews )</p>
+                  </div>
+                  <a href="#review">Write a Review</a>
+                </div>
+                <div className="border-bottom py-3">
+                  <div className="d-flex gap-10 align-items-center">
+                    <h3>Abc:</h3>
+                    <p>def</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center">
+                    <h3>Abc:</h3>
+                    <p>def</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center">
+                    <h3>Abc:</h3>
+                    <p>def</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center">
+                    <h3>Abc:</h3>
+                    <p>def</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -85,7 +123,7 @@ const SingleProduct = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <h3>Reviews</h3>
+              <h3 id="review">Reviews</h3>
               <div className="review-inner-wrapper">
                 <div className="review-head d-flex justify-content-between align-items-end">
                   <div>
@@ -105,7 +143,7 @@ const SingleProduct = () => {
                     <div>
                       <a
                         className="text-dark text-decoration-underline"
-                        href="/home"
+                        href="/product"
                       >
                         Write a Review
                       </a>
