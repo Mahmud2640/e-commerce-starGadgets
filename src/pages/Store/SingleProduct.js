@@ -4,8 +4,15 @@ import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
 import "./SingleProduct.css";
 import ProductCard from "../../components/Products/ProductCard";
 import ReactStars from "react-rating-stars-component";
+import ReactImageZoom from "react-image-zoom";
 
 const SingleProduct = () => {
+  const props = {
+    width: 600,
+    height: 500,
+    zoomWidth: 500,
+    img: "https://reviews.com.np/uploads/article/imei-unregistered-mobile-phones-to-stop-working-from-today/imei-unregistered-mobile-phones-to-stop-working-from-today.png",
+  };
   const [orderProduct, setOrderProduct] = useState(true);
   return (
     <>
@@ -14,8 +21,46 @@ const SingleProduct = () => {
       <div className="main-product-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-6"></div>
-            <div className="col-6"></div>
+            <div className="col-6">
+              <div className="main-product-image">
+                <div>
+                  <ReactImageZoom {...props} />
+                </div>
+              </div>
+              <div className="other-product-images d-flex flex-wrap gap-15">
+                <div>
+                  <img
+                    src="https://reviews.com.np/uploads/article/imei-unregistered-mobile-phones-to-stop-working-from-today/imei-unregistered-mobile-phones-to-stop-working-from-today.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="https://reviews.com.np/uploads/article/imei-unregistered-mobile-phones-to-stop-working-from-today/imei-unregistered-mobile-phones-to-stop-working-from-today.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="https://reviews.com.np/uploads/article/imei-unregistered-mobile-phones-to-stop-working-from-today/imei-unregistered-mobile-phones-to-stop-working-from-today.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="https://reviews.com.np/uploads/article/imei-unregistered-mobile-phones-to-stop-working-from-today/imei-unregistered-mobile-phones-to-stop-working-from-today.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="col-6">
+              <div className="main-product-details"></div>
+            </div>
           </div>
         </div>
       </div>
