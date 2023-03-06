@@ -22,11 +22,12 @@
   font-weight: 400;
   color: var(--color-1c1c1b);
 }
-.auth-card .signup {
+.signup {
   background-color: var(--color-febd69);
   color: var(--color-131921);
+  border: none;
 }
-.auth-card .signup:hover {
+.signup:hover {
   background-color: var(--color-131921);
   color: white;
 }

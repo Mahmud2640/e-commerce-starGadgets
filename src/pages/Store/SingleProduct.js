@@ -5,12 +5,14 @@ import "./SingleProduct.css";
 import ProductCard from "../../components/Products/ProductCard";
 import ReactStars from "react-rating-stars-component";
 import ReactImageZoom from "react-image-zoom";
+import Color from "../../components/Color/Color";
+import { TbGitCompare } from "react-icons/tb";
 
 const SingleProduct = () => {
   const props = {
     width: 600,
     height: 500,
-    zoomWidth: 500,
+    zoomWidth: 600,
     img: "https://reviews.com.np/uploads/article/imei-unregistered-mobile-phones-to-stop-working-from-today/imei-unregistered-mobile-phones-to-stop-working-from-today.png",
   };
   const [orderProduct, setOrderProduct] = useState(true);
@@ -75,26 +77,84 @@ const SingleProduct = () => {
                       edit={false}
                       activeColor="#ffd700"
                     />
-                    <p className="mb-0">( 2 Reviews )</p>
+                    <p className="mb-0 t-review">( 2 Reviews )</p>
                   </div>
-                  <a href="#review">Write a Review</a>
+                  <a className="review-btn" href="#review">
+                    Write a Review
+                  </a>
                 </div>
                 <div className="border-bottom py-3">
-                  <div className="d-flex gap-10 align-items-center">
-                    <h3>Abc:</h3>
-                    <p>def</p>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Type:</h3>
+                    <p className="product-data">Watch</p>
                   </div>
-                  <div className="d-flex gap-10 align-items-center">
-                    <h3>Abc:</h3>
-                    <p>def</p>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Brand:</h3>
+                    <p className="product-data">Apple</p>
                   </div>
-                  <div className="d-flex gap-10 align-items-center">
-                    <h3>Abc:</h3>
-                    <p>def</p>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Category:</h3>
+                    <p className="product-data">Mobile</p>
                   </div>
-                  <div className="d-flex gap-10 align-items-center">
-                    <h3>Abc:</h3>
-                    <p>def</p>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Tag:</h3>
+                    <p className="product-data">Mobile</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Availablity:</h3>
+                    <p className="product-data">In Stock</p>
+                  </div>
+                  <div className="d-flex gap-10 flex-column mt-2 mb-3">
+                    <h3 className="product-heading">Size:</h3>
+                    <div className="d-flex flex-wrap gap-15">
+                      <span className="badge border border-1 bg-white text-dark border-secondary">
+                        S
+                      </span>
+                      <span className="badge border border-1 bg-white text-dark border-secondary">
+                        M
+                      </span>
+                      <span className="badge border border-1 bg-white text-dark border-secondary">
+                        XL
+                      </span>
+                      <span className="badge border border-1 bg-white text-dark border-secondary">
+                        XXL
+                      </span>
+                    </div>
+                  </div>
+                  <div className="d-flex gap-10 flex-column mt-2 mb-3">
+                    <h3 className="product-heading">Color:</h3>
+                    <Color />
+                  </div>
+                  <div className="d-flex align-items-center gap-15 flex-row mt-2 mb-3">
+                    <h3 className="product-heading">Quantity:</h3>
+                    <div className="">
+                      <input
+                        type="number"
+                        min={1}
+                        max={10}
+                        style={{ width: "70px" }}
+                        className="form-control"
+                        name=""
+                        id=""
+                      />
+                    </div>
+                    <div className="d-flex align-items-center gap-30 ms-5">
+                      <button className="button border-0" type="submit">
+                        Add to cart
+                      </button>
+                      <button className="button signup">Buy it Now</button>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center gap-15">
+                    <div>
+                      <a href="#d">
+                        <TbGitCompare />
+                        Add to Compare
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#dd">Add to Wishlist</a>
+                    </div>
                   </div>
                 </div>
               </div>

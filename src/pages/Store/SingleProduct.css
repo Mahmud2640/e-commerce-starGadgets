@@ -62,10 +62,11 @@
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
 .main-product-image .js-image-zoom__zoomed-image {
-  left: 230px !important;
+  left: 40px !important;
   padding: 10px;
   background-color: white;
   border-radius: 10px;
+  z-index: 1000;
 }
 .main-product-details {
   padding: 20px;
@@ -85,6 +86,20 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 600;
-  margin-top: 10px;
   margin-bottom: 10px;
+}
+.main-product-swtails a.review-btn,
+.t-review {
+  color: var(--color-777777);
+  font-size: 13px;
+}
+.product-heading {
+  font-size: 14px;
+  color: var(--color-1c1c1b);
+  margin-bottom: 0px;
+}
+.product-data {
+  font-size: 13px;
+  color: var(--color-777777);
+  margin-bottom: 0px;
 }
