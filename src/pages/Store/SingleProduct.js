@@ -7,15 +7,27 @@ import ReactStars from "react-rating-stars-component";
 import ReactImageZoom from "react-image-zoom";
 import Color from "../../components/Color/Color";
 import { TbGitCompare } from "react-icons/tb";
+import { AiOutlineHeart } from "react-icons/ai";
 
 const SingleProduct = () => {
   const props = {
     width: 600,
-    height: 500,
+    height: 530,
     zoomWidth: 600,
     img: "https://reviews.com.np/uploads/article/imei-unregistered-mobile-phones-to-stop-working-from-today/imei-unregistered-mobile-phones-to-stop-working-from-today.png",
   };
+
   const [orderProduct, setOrderProduct] = useState(true);
+
+   const copyToClipboard = (text) => {
+    console.log('text', text)
+    var textField = document.createElement('textarea')
+    textField.innerText = text
+    document.body.appendChild(textField)
+    textField.select()
+    document.execCommand('copy')
+    textField.remove()
+  }
   return (
     <>
       <Meta title={"Product Name"} />
@@ -148,13 +160,32 @@ const SingleProduct = () => {
                   <div className="d-flex align-items-center gap-15">
                     <div>
                       <a href="#d">
-                        <TbGitCompare />
+                        <TbGitCompare className="fs-5 me-2" />
                         Add to Compare
                       </a>
                     </div>
                     <div>
-                      <a href="#dd">Add to Wishlist</a>
+                      <a href="#dd">
+                        <AiOutlineHeart className="fs-5 me-2" />
+                        Add to Wishlist
+                      </a>
                     </div>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Shiping & Returns :</h3>
+                    <p className="product-data">
+                      Free shipping and returns available on all orders! <br />
+                      We ship all US domestic orders
+                      <b>within5-10 business days!</b>
+                    </p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Shiping & Returns :</h3>
+                    <p className="product-data">
+                      Free shipping and returns available on all orders! <br />
+                      We ship all US domestic orders
+                      <b>within5-10 business days!</b>
+                    </p>
                   </div>
                 </div>
               </div>
