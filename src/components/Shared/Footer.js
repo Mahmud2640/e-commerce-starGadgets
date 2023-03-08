@@ -2,6 +2,7 @@ import React from "react";
 import "./css/Footer.css";
 import { BsLinkedin, BsGithub, BsYoutube, BsInstagram } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import newslatter from "../../images/newsletter.png";
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
           <div className="row align-items-center">
             <div className="col-5">
               <div className="footer-top-data d-flex gap-30 align-items-center">
-                <img src="images/newsletter.png" alt="newslatter" />
+                <img src={newslatter} alt="newslatter" />
                 <h2 className="mb-0 text-white">Sign Up for Newsletter</h2>
               </div>
             </div>
@@ -82,7 +83,10 @@ const Footer = () => {
                 <Link className="text-white py-2 mb-1" to="/shiping-policy">
                   Shipping Policy
                 </Link>
-                <Link className="text-white py-2 mb-1" to="/terms-and-condition">
+                <Link
+                  className="text-white py-2 mb-1"
+                  to="/terms-and-condition"
+                >
                   Terms & Conditions
                 </Link>
                 <Link className="text-white py-2 mb-1" to="/blog">
