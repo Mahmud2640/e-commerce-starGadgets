@@ -2,6 +2,8 @@ import React from "react";
 import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
 import Meta from "../../components/seo/Meta";
 import "./WishList.css";
+import cross from "../../images/cross.svg";
+import watch from "../../images/watch.jpg";
 
 const WishList = () => {
   return (
@@ -14,16 +16,12 @@ const WishList = () => {
             <div className="col-3">
               <div className="wishlist-card position-relative">
                 <img
-                  src="images/cross.svg"
+                  src={cross}
                   alt="cross"
                   className="position-absolute cross img-fluid"
                 />
                 <div className="wishlist-card-image">
-                  <img
-                    src="images/watch.jpg"
-                    alt="watch"
-                    className="img-fluid w-100"
-                  />
+                  <img src={watch} alt="watch" className="img-fluid w-100" />
                 </div>
                 <div className="py-3 px-3">
                   <h5 className="title">
@@ -36,16 +34,12 @@ const WishList = () => {
             <div className="col-3">
               <div className="wishlist-card position-relative">
                 <img
-                  src="images/cross.svg"
+                  src={cross}
                   alt="cross"
                   className="position-absolute cross img-fluid"
                 />
                 <div className="wishlist-card-image">
-                  <img
-                    src="images/watch.jpg"
-                    alt="watch"
-                    className="img-fluid w-100"
-                  />
+                  <img src={watch} alt="watch" className="img-fluid w-100" />
                 </div>
                 <div className="py-3 px-3">
                   <h5 className="title">
@@ -58,16 +52,12 @@ const WishList = () => {
             <div className="col-3">
               <div className="wishlist-card position-relative">
                 <img
-                  src="images/cross.svg"
+                  src={cross}
                   alt="cross"
                   className="position-absolute cross img-fluid"
                 />
                 <div className="wishlist-card-image">
-                  <img
-                    src="images/watch.jpg"
-                    alt="watch"
-                    className="img-fluid w-100"
-                  />
+                  <img src={watch} alt="watch" className="img-fluid w-100" />
                 </div>
                 <div className="py-3 px-3">
                   <h5 className="title">
@@ -80,16 +70,12 @@ const WishList = () => {
             <div className="col-3">
               <div className="wishlist-card position-relative">
                 <img
-                  src="images/cross.svg"
+                  src={cross}
                   alt="cross"
                   className="position-absolute cross img-fluid"
                 />
                 <div className="wishlist-card-image">
-                  <img
-                    src="images/watch.jpg"
-                    alt="watch"
-                    className="img-fluid w-100"
-                  />
+                  <img src={watch} alt="watch" className="img-fluid w-100" />
                 </div>
                 <div className="py-3 px-3">
                   <h5 className="title">

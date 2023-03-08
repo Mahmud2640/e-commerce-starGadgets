@@ -5,6 +5,11 @@ import Meta from "../../components/seo/Meta";
 import ProductCard from "../../components/Products/ProductCard";
 import "./OurStore.css";
 import Color from "../../components/Color/Color";
+import watch from "../../images/watch.jpg";
+import gr4 from "../../images/gr4.svg";
+import gr3 from "../../images/gr3.svg";
+import gr2 from "../../images/gr2.svg";
+import gr from "../../images/gr.svg";
 
 const OurStore = () => {
   const [grid, setGrid] = useState(4);
@@ -134,11 +139,7 @@ const OurStore = () => {
                 <div>
                   <div className="random-products mb-3 d-flex">
                     <div className="w-50">
-                      <img
-                        src="images/watch.jpg"
-                        className="img-fluid"
-                        alt="watch"
-                      />
+                      <img src={watch} className="img-fluid" alt="watch" />
                     </div>
                     <div className="w-50">
                       <h5>Kids Headphone bluk 10 pack multi control</h5>
@@ -154,11 +155,7 @@ const OurStore = () => {
                   </div>
                   <div className="random-products d-flex">
                     <div className="w-50">
-                      <img
-                        src="images/watch.jpg"
-                        className="img-fluid"
-                        alt="watch"
-                      />
+                      <img src={watch} className="img-fluid" alt="watch" />
                     </div>
                     <div className="w-50">
                       <h5>Kids Headphone bluk 10 pack multi control</h5>
@@ -214,7 +211,7 @@ const OurStore = () => {
                         onClick={() => {
                           setGrid(3);
                         }}
-                        src="images/gr4.svg"
+                        src={gr4}
                         className="d-block img-fluid"
                         alt="grid"
                       />
@@ -222,7 +219,7 @@ const OurStore = () => {
                         onClick={() => {
                           setGrid(4);
                         }}
-                        src="images/gr3.svg"
+                        src={gr3}
                         className="d-block img-fluid"
                         alt="grid"
                       />
@@ -230,7 +227,7 @@ const OurStore = () => {
                         onClick={() => {
                           setGrid(6);
                         }}
-                        src="images/gr2.svg"
+                        src={gr2}
                         className="d-block img-fluid"
                         alt="grid"
                       />
@@ -238,7 +235,7 @@ const OurStore = () => {
                         onClick={() => {
                           setGrid(12);
                         }}
-                        src="images/gr.svg"
+                        src={gr}
                         className="d-block img-fluid"
                         alt="grid"
                       />
