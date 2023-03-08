@@ -19,6 +19,7 @@ import RefundPolicy from "../pages/RefundPolicy/RefundPolicy";
 import ShipingPolicy from "../pages/ShipingPolicy/ShipingPolicy";
 import TermsAndCondition from "../pages/TermsAndCondition/TermsAndCondition";
 import SingleProduct from "../pages/Store/SingleProduct";
+import Checkout from "../pages/Checkout/Checkout";
 
 const Routess = () => {
   return (
@@ -38,6 +39,7 @@ const Routess = () => {
           <Route path="forget-password" element={<ForgetPassword />} />
           <Route path="reset-password" element={<ResetPassword />} />
           <Route path="cart" element={<Cart />} />
+          <Route path="checkout" element={<Checkout />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
           <Route path="refund-policy" element={<RefundPolicy />} />
           <Route path="shiping-policy" element={<ShipingPolicy />} />
