@@ -27,139 +27,138 @@ import brand5 from "../../images/brand-05.png";
 import brand6 from "../../images/brand-06.png";
 import brand7 from "../../images/brand-07.png";
 import brand8 from "../../images/brand-08.png";
+import Container from "../../components/Container/Container";
 
 const Home = () => {
   return (
     <>
       <Meta title={"StarGadgetsBD"} />
-      <section className="home-wrapper-1 py-5">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-6">
-              <div className="main-banner position-relative">
+      <Container class1="home-wrapper-1 py-5">
+        <div className="row">
+          <div className="col-6">
+            <div className="main-banner position-relative">
+              <img
+                src={mainbanner}
+                className="img-fluid rounded-3"
+                alt="main banner"
+              />
+              <div className="main-banner-content position-absolute">
+                <h4>SUPERCHARGED FOR PROS.</h4>
+                <h5>iPad S13+ Pro.</h5>
+                <p>From $999.00 or $41.62/mo.</p>
+                <Link className="button" to="">
+                  Buy Now
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="col-6">
+            <div className="d-flex flex-wrap gap-10 justify-content-between align-items-center">
+              <div className="small-banner position-relative">
                 <img
-                  src={mainbanner}
+                  src={catbanner1}
                   className="img-fluid rounded-3"
                   alt="main banner"
                 />
-                <div className="main-banner-content position-absolute">
-                  <h4>SUPERCHARGED FOR PROS.</h4>
+                <div className="small-banner-content position-absolute">
+                  <h4>FOR PROS.</h4>
                   <h5>iPad S13+ Pro.</h5>
-                  <p>From $999.00 or $41.62/mo.</p>
-                  <Link className="button" to="">
-                    Buy Now
-                  </Link>
+                  <p>
+                    From $999.00 <br /> $41.62/mo.
+                  </p>
                 </div>
               </div>
-            </div>
-            <div className="col-6">
-              <div className="d-flex flex-wrap gap-10 justify-content-between align-items-center">
-                <div className="small-banner position-relative">
-                  <img
-                    src={catbanner1}
-                    className="img-fluid rounded-3"
-                    alt="main banner"
-                  />
-                  <div className="small-banner-content position-absolute">
-                    <h4>FOR PROS.</h4>
-                    <h5>iPad S13+ Pro.</h5>
-                    <p>
-                      From $999.00 <br /> $41.62/mo.
-                    </p>
-                  </div>
+              <div className="small-banner position-relative">
+                <img
+                  src={catbanner1}
+                  className="img-fluid rounded-3"
+                  alt="main banner"
+                />
+                <div className="small-banner-content position-absolute">
+                  <h4>FOR PROS.</h4>
+                  <h5>iPad S13+ Pro.</h5>
+                  <p>
+                    From $999.00 <br /> $41.62/mo.
+                  </p>
                 </div>
-                <div className="small-banner position-relative">
-                  <img
-                    src={catbanner1}
-                    className="img-fluid rounded-3"
-                    alt="main banner"
-                  />
-                  <div className="small-banner-content position-absolute">
-                    <h4>FOR PROS.</h4>
-                    <h5>iPad S13+ Pro.</h5>
-                    <p>
-                      From $999.00 <br /> $41.62/mo.
-                    </p>
-                  </div>
+              </div>
+              <div className="small-banner position-relative">
+                <img
+                  src={catbanner1}
+                  className="img-fluid rounded-3"
+                  alt="main banner"
+                />
+                <div className="small-banner-content position-absolute">
+                  <h4>FOR PROS.</h4>
+                  <h5>iPad S13+ Pro.</h5>
+                  <p>
+                    From $999.00 <br /> $41.62/mo.
+                  </p>
                 </div>
-                <div className="small-banner position-relative">
-                  <img
-                    src={catbanner1}
-                    className="img-fluid rounded-3"
-                    alt="main banner"
-                  />
-                  <div className="small-banner-content position-absolute">
-                    <h4>FOR PROS.</h4>
-                    <h5>iPad S13+ Pro.</h5>
-                    <p>
-                      From $999.00 <br /> $41.62/mo.
-                    </p>
-                  </div>
-                </div>
-                <div className="small-banner position-relative">
-                  <img
-                    src={catbanner1}
-                    className="img-fluid rounded-3"
-                    alt="main banner"
-                  />
-                  <div className="small-banner-content position-absolute">
-                    <h4>FOR PROS.</h4>
-                    <h5>iPad S13+ Pro.</h5>
-                    <p>
-                      From $999.00 <br /> $41.62/mo.
-                    </p>
-                  </div>
+              </div>
+              <div className="small-banner position-relative">
+                <img
+                  src={catbanner1}
+                  className="img-fluid rounded-3"
+                  alt="main banner"
+                />
+                <div className="small-banner-content position-absolute">
+                  <h4>FOR PROS.</h4>
+                  <h5>iPad S13+ Pro.</h5>
+                  <p>
+                    From $999.00 <br /> $41.62/mo.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section className="home-wrapper-2 py-5">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-12">
-              <div className="services d-flex align-items-center justify-content-between">
-                <div className="d-flex align-items-center gap-15">
-                  <img src={service} alt="services" />
-                  <div>
-                    <h6>Free Shipping</h6>
-                    <p className="mb-0">From all orders over $5</p>
-                  </div>
+      </Container>
+      <Container class1="home-wrapper-2 py-5">
+        <div className="row">
+          <div className="col-12">
+            <div className="services d-flex align-items-center justify-content-between">
+              <div className="d-flex align-items-center gap-15">
+                <img src={service} alt="services" />
+                <div>
+                  <h6></h6>
+                  <p className="mb-0">From all orders over $5</p>
                 </div>
-                <div className="d-flex align-items-center gap-15">
-                  <img src={service2} alt="services" />
-                  <div>
-                    <h6>Daily Surprise Offers</h6>
-                    <p className="mb-0">Save upto 25% off</p>
-                  </div>
+              </div>
+              <div className="d-flex align-items-center gap-15">
+                <img src={service2} alt="services" />
+                <div>
+                  <h6>Daily Surprise Offers</h6>
+                  <p className="mb-0">Save upto 25% off</p>
                 </div>
-                <div className="d-flex align-items-center gap-15">
-                  <img src={service3} alt="services" />
-                  <div>
-                    <h6>Support 24/7</h6>
-                    <p className="mb-0">Shop with an expert</p>
-                  </div>
+              </div>
+              <div className="d-flex align-items-center gap-15">
+                <img src={service3} alt="services" />
+                <div>
+                  <h6>Support 24/7</h6>
+                  <p className="mb-0">Shop with an expert</p>
                 </div>
-                <div className="d-flex align-items-center gap-15">
-                  <img src={service4} alt="services" />
-                  <div>
-                    <h6>Affordable Prices</h6>
-                    <p className="mb-0">Get Factory Default Price</p>
-                  </div>
+              </div>
+              <div className="d-flex align-items-center gap-15">
+                <img src={service4} alt="services" />
+                <div>
+                  <h6>Affordable Prices</h6>
+                  <p className="mb-0">Get Factory Default Price</p>
                 </div>
-                <div className="d-flex align-items-center gap-15">
-                  <img src={service5} alt="services" />
-                  <div>
-                    <h6>Secure Payments</h6>
-                    <p className="mb-0">100% Protected Payment</p>
-                  </div>
+              </div>
+              <div className="d-flex align-items-center gap-15">
+                <img src={service5} alt="services" />
+                <div>
+                  <h6>Secure Payments</h6>
+                  <p className="mb-0">100% Protected Payment</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </Container>
+
+
       <section className="home-wrapper-2 py-5">
         <div className="container-xxl">
           <div className="row">

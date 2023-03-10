@@ -19,9 +19,9 @@ const ProductCard = (props) => {
       >
         <Link to=":id" className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
-            <Link to="">
+            <button className="border-0 bg-transparent">
               <img src={wish} alt="wish" />
-            </Link>
+            </button>
           </div>
           <div className="product-image">
             <img src={watch} className="img-fluid" alt="productImage" />
@@ -49,15 +49,15 @@ const ProductCard = (props) => {
           </div>
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
-              <Link to="">
+              <button className="border-0 bg-transparent">
                 <img src={prodcompare} alt="compare" />
-              </Link>
-              <Link to="">
+              </button>
+              <button className="border-0 bg-transparent">
                 <img src={view} alt="view" />
-              </Link>
-              <Link to="">
+              </button>
+              <button className="border-0 bg-transparent">
                 <img src={cart} alt="addcart" />
-              </Link>
+              </button>
             </div>
           </div>
         </Link>
@@ -97,15 +97,15 @@ const ProductCard = (props) => {
           </div>
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
-              <Link to="">
+              <button className="border-0 bg-transparent">
                 <img src={prodcompare} alt="compare" />
-              </Link>
-              <Link to="">
+              </button>
+              <button className="border-0 bg-transparent">
                 <img src={view} alt="view" />
-              </Link>
-              <Link to="">
+              </button>
+              <button className="border-0 bg-transparent">
                 <img src={cart} alt="addcart" />
-              </Link>
+              </button>
             </div>
           </div>
         </Link>
