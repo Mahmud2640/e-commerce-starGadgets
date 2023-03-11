@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./BlogCard.css";
-import blog from "../../images/blog-1.jpg"
+import blog from "../../images/blog-1.jpg";
 
 const BlogCard = () => {
   return (

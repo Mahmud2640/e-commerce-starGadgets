@@ -91,7 +91,7 @@ const SingleProduct = () => {
                   />
                   <p className="mb-0 t-review">( 2 Reviews )</p>
                 </div>
-                <a className="review-btn" href="#review">
+                <a className="review-btn" href="#review" to="#review">
                   Write a Review
                 </a>
               </div>
@@ -159,13 +159,13 @@ const SingleProduct = () => {
                 </div>
                 <div className="d-flex align-items-center gap-15">
                   <div>
-                    <a href="#d">
+                    <a href="#c" to="#c">
                       <TbGitCompare className="fs-5 me-2" />
                       Add to Compare
                     </a>
                   </div>
                   <div>
-                    <a href="#dd">
+                    <a href="#dd" to="#">
                       <AiOutlineHeart className="fs-5 me-2" />
                       Add to Wishlist
                     </a>
@@ -183,6 +183,7 @@ const SingleProduct = () => {
                   <h3 className="product-heading">Product Link :</h3>
                   <a
                     href="#/"
+                    to="#"
                     onClick={() => {
                       copyToClipboard(
                         "https://reviews.com.np/uploads/article/imei-unregistered-mobile-phones-to-stop-working-from-today/imei-unregistered-mobile-phones-to-stop-working-from-today.png"
@@ -236,6 +237,7 @@ const SingleProduct = () => {
                     <a
                       className="text-dark text-decoration-underline"
                       href="/product"
+                      to="/product"
                     >
                       Write a Review
                     </a>

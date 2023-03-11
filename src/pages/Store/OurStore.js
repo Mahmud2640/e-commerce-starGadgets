@@ -37,7 +37,7 @@ const OurStore = () => {
               <div>
                 <h5 className="sub-title">Availablity</h5>
                 <div>
-                  <div classname="form-check">
+                  <div className="form-check">
                     <input
                       className="form-check-input"
                       type="checkbox"
@@ -179,11 +179,14 @@ const OurStore = () => {
                   <p className="mb-0 d-block" style={{ width: "100px" }}>
                     Sort By:
                   </p>
-                  <select name="" id="" className="form-control form-select">
+                  <select
+                    name=""
+                    defaultValue={"manual"}
+                    id=""
+                    className="form-control form-select"
+                  >
                     <option value="manual">Featured</option>
-                    <option value="best-selling" selected="selected">
-                      Best Selling
-                    </option>
+                    <option value="best-selling">Best Selling</option>
                     <option value="title-ascending">Alphabetically, A-Z</option>
                     <option value="title-descending">
                       Alphabetically, Z-A

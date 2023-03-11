@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
 import Container from "../../components/Container/Container";
+import CoustomeInput from "../../components/CoustomeInput/CoustomeInput";
 import Meta from "../../components/seo/Meta";
 
 const ForgetPassword = () => {
@@ -19,14 +20,7 @@ const ForgetPassword = () => {
                 We will send an email to reset your password
               </p>
               <form action="" className="d-flex flex-column gap-15">
-                <div>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    className="form-control"
-                  />
-                </div>
+                <CoustomeInput type="email" name="email" placeholder="Email" />
                 <div>
                   <div className="mt-3 d-flex flex-column justify-content-center gap-15 align-items-center">
                     <button className="button border-0" type="submit">
